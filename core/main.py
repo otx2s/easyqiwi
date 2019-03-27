@@ -10,6 +10,7 @@ from core.vivod import *
 from core.banner import *
 
 def main():
+	os.system("clear")
 	print(banner)
 	van = input(">>> ")
 	if van == "1" or van == "01":
