@@ -2,5 +2,4 @@
 
 from core.main import *
 
-check()
 main()
