@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-from core.check import *
 from time import sleep as ts
 from core.colors import *
 from SimpleQIWI import *
