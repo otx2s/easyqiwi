@@ -9,7 +9,7 @@ def bal():
 		pho = input(B+"[#]"+W+" Enter phone: ")
 		api = QApi(token=tok, phone=pho)
 		print(G+"[+]"+W+" Balance Founded")
-		print(api.balance)
+		print(G+"[+]"+W+" Balance = ", api.balance)
 	except OSError:
 		print(R+"[-]"+W+" Something wrong!")
 		pass
