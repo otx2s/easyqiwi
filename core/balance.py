@@ -10,6 +10,6 @@ def bal():
 		api = QApi(token=tok, phone=pho)
 		print(G+"[+]"+W+" Balance Founded")
 		print(G+"[+]"+W+" Balance = ", api.balance)
-	except OSError:
+	except:
 		print(R+"[-]"+W+" Something wrong!")
 		pass
