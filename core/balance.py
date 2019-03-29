@@ -5,11 +5,12 @@ from SimpleQIWI import *
 
 def bal():
 	try:
-		tok = input(B+"[#]"+W+" Enter token: ")
+		tok = input(B+"\n[#]"+W+" Enter token: ")
 		pho = input(B+"[#]"+W+" Enter phone: ")
 		api = QApi(token=tok, phone=pho)
-		print(G+"[+]"+W+" Balance Founded")
-		print(G+"[+]"+W+" Balance = ", api.balance)
+		if api.balance != 0:
+			print(G+"[+]"+W+" Balance Founded")
+			print(G+"[+]"+W+" Balance =", api.balance)
 	except:
-		print(R+"[-]"+W+" Something wrong!")
+		print(R+"[X]"+W+" Balance not found")
 		pass
